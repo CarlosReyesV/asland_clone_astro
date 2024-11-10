@@ -1,3 +1,9 @@
+# Esland awards clone, reimagined
+
+Made for educational purpose and Astro framework discovering.
+
+:warning: **This website is not official** :warning:
+
 # Astro Starter Kit: Basics
 
 ```sh

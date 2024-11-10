@@ -1,0 +1,35 @@
+---
+import Logo from "./Logo.astro";
+
+import MenuIcon from "./icons/Menu.astro";
+import CloseIcon from "./icons/Close.astro";
+---
+
+<header id="header-nav" class="fixed top-0 w-full px-6 py-4 z-50">
+    <div class="max-w-7xl mx-auto flex items-center justify-between gap-16">
+        <a href="/" class="relative z-10">
+            <Logo class="absolute w-10 m-auto blur-sm opacity-0 transition-opacity duration-300 hover:opacity-100"></Logo>
+            <Logo class="w-10"></Logo>
+        </a>
+        <nav id="header-menu" class="fixed w-full h-dvh inset-0 bg-[#151a36]/90 text-2xl flex flex-col items-center justify-center gap-8 -translate-y-full transition-transform duration-300 target:translate-y-0 md:static md:h-[initial] md:bg-[initial] md:text-xl md:flex-row md:translate-y-[initial]">
+            <ul class="flex gap-4 cursor-pointer">
+                <li>
+                    <a class="text__glowing">VOTA</a>
+                </li>
+                <li>
+                    <a class="text__glowing">INFORMACIÓN</a>
+                </li>
+                <li>
+                    <a class="text__glowing">ARCHIVO</a>
+                </li>
+            </ul>
+            <a href="https://drive.google.com/file/d/1D7IvIqMyqAoG58fuk8bc0JvhAmrWBbOK/view"
+                class="md:py-2 md:ml-auto md:text-base lg:text-base">ESLAND: EL DOCUMENTAL
+            </a>
+            <a href="#header-nav" class="md:hidden absolute top-6 right-6">
+                <CloseIcon />
+            </a>
+        </nav>
+        <a href="#header-menu" class="md:hidden"><MenuIcon /></a>
+    </div>
+</header>
